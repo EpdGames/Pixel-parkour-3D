@@ -1,18 +1,17 @@
 <body>
   <div class="texttt">
 <h3>Enter Chat and press enter</h3>
-<p><div><input id=input placeholder="message" class="in"  /></div></p>
+<p><div><input id=input placeholder="message" class="in" /></div></p>
 
 <h3>Chat Output</h3>
 </div>
 <div id=box></div>
+
 <script src=https://cdn.pubnub.com/sdk/javascript/pubnub.4.28.2.min.js></script>
-<script> 
-);
-  (function() {
+<script> (function() {
         var pubnub = new PubNub({
-            publishKey: 'demo',
-            subscribeKey: 'demo'
+            publishKey: 'pub-c-312b94fd-67af-4619-b2a0-17e914e2a32d',
+            subscribeKey: 'sub-c-49b5606d-4ddc-44ec-a7a5-144cd20db14f'
         });
         function $(id) {
             return document.getElementById(id);
@@ -38,8 +37,7 @@
             }
         });
     })();
-    // start, end, count are optional
-pubnub.fetchMessages(
+        Pubnub.fetchMessages(
     {
         channels: ['10chat-demo'],
         end: '15343325004275466',
@@ -48,6 +46,7 @@ pubnub.fetchMessages(
     (status, response) => {
         // handle response
     }
+);
 </script>
 <style>
   h3 {
