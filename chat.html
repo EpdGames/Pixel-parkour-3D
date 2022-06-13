@@ -6,12 +6,11 @@
 <h3>Chat Output</h3>
 </div>
 <div id=box></div>
-
 <script src=https://cdn.pubnub.com/sdk/javascript/pubnub.4.28.2.min.js></script>
 <script> (function() {
         var pubnub = new PubNub({
-            publishKey: 'pub-c-312b94fd-67af-4619-b2a0-17e914e2a32d',
-            subscribeKey: 'sub-c-49b5606d-4ddc-44ec-a7a5-144cd20db14f'
+            publishKey: 'demo',
+            subscribeKey: 'demo'
         });
         function $(id) {
             return document.getElementById(id);
@@ -37,16 +36,6 @@
             }
         });
     })();
-        Pubnub.fetchMessages(
-    {
-        channels: ['channel'],
-        end: '15343325004275466',
-        count: 100
-    },
-    (status, response) => {
-        // handle response
-    }
-);
 </script>
 <style>
   h3 {
