@@ -7,7 +7,19 @@
 </div>
 <div id=box></div>
 <script src=https://cdn.pubnub.com/sdk/javascript/pubnub.4.28.2.min.js></script>
-<script> (function() {
+<script> 
+  // start, end, count are optional
+pubnub.fetchMessages(
+    {
+        channels: ['10chat-demo'],
+        end: '15343325004275466',
+        count: 100
+    },
+    (status, response) => {
+        // handle response
+    }
+);
+  (function() {
         var pubnub = new PubNub({
             publishKey: 'demo',
             subscribeKey: 'demo'
