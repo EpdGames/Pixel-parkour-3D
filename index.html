@@ -1,97 +1,110 @@
 <body class="crosshair">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="Contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    <br>
-    <br>
-    <br>
-    <h1>Pixel Parkour 3D</h1>
-    <br>
-    <br>
-    <br>
-    <h2>First person</h2>
-  <p><a href="https://www.mediafire.com/file/44v4a4naould6gw/pixel_parkour_first_person_setup.exe/file" style="border-radius:8px ;" class="cell"><button class="cell" >Download</button></a></p>
-  <h2>Third person beta</h2>
-    <p><a href="https://www.mediafire.com/file/1bxri4ltswrdmy3/pixel_parkour_third_person_setup.exe/file" style="border-radius:8px ;" class="cell"><button class="cell" >Download</button></a></p>
-    <br>
-  <p>version 2.2
-      <br>Release notes
-      <br> 2 new levels and a Health bar<p>
-    <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="Contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  <br>
+  <br>
+  <br>
+  <h1>Pixel Parkour 3D</h1>
+  <br>
+  <br>
+  <h2>First person</h2>
+<p><a href="https://www.mediafire.com/file/44v4a4naould6gw/pixel_parkour_first_person_setup.exe/file" style="border-radius:8px ;" class="cell"><button class="cell" >Download</button></a></p>
+<h2>Third person beta</h2>
+  <p><a href="https://www.mediafire.com/file/1bxri4ltswrdmy3/pixel_parkour_third_person_setup.exe/file" style="border-radius:8px ;" class="cell"><button class="cell" >Download</button></a></p>
+  <br>
+<p >version 2.2
+    <br>Release notes
+    <br> 2 new levels and a Health bar<p>
+  <style>
 
-        body {
-            background-color: black;
-        }
-
-        h1 {
-            text-align: center;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: cyan;
-            font-size: 35;
-        }
-
-        .topnav {
-    overflow: hidden;
-    border: 2;
-  }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: monospace;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: rgb(168, 240, 222);
-    color: rgb(0, 0, 0);
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: lightseagreen;
-    color: white;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  }
-  button {
-          height: 51;
-          width: 150;
-          border: 0ch;
+      body {
+          background-color: black;
       }
 
-      p {
+      h1 {
           text-align: center;
-          color: white;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          color: cyan;
+          font-size: 35;
+          animation-name: h1ani;
+          animation-duration: 2s;
+          animation-iteration-count: 1;
       }
 
-      h2 {
-          color: white;
-          font-family: monospace;
-          text-align: center;
-      }
-      body::-webkit-scrollbar {
-        width: 1em;
-      }
-      .crosshair {cursor: crosshair;}
-      .cell {cursor: cell;}
-    </style>
+      .topnav {
+  overflow: hidden;
+  border: 2;
+}
 
-    <br>
-    <br>
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(168, 240, 222);
+  color: rgb(0, 0, 0);
+  border: solid 2px transparent;
+  border-radius: 0.2em;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: lightseagreen;
+  color: white;
+  border: solid 2px transparent;
+  border-radius: 0.2em;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+button {
+        height: 51;
+        width: 150;
+        border: solid 2px transparent;
+        border-radius: 0.2em;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        font-family: monospace;
+    }
+
+    h2 {
+        color: white;
+        font-family: monospace;
+        text-align: center;
+    }
+    body::-webkit-scrollbar {
+      width: 1em;
+    }
+    .crosshair {cursor: crosshair;}
+    .cell {cursor: cell;}
+
+    @keyframes h1ani {
+      from {color: black;}
+      to {color: cyan;}
+    }
+  </style>
+
+  <br>
+  <br>
 <img src="https://i.ibb.co/RzfPY7M/Screenshot-2022-06-07-174247.png">
 </body>
